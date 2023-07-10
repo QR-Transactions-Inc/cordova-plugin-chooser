@@ -113,7 +113,7 @@ public class Chooser extends CordovaPlugin {
 						;
 						InputStream inputStream = contentResolver.openInputStream(uri);
                         int size = inputStream.available();
-                        if (size >= 52428800) {
+                        if (size >= 20971520) {
                             this.callback.success("File_size_too_big");
                         	return;
                         }
